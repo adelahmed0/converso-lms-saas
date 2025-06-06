@@ -1,7 +1,4 @@
 const CompanionsLibrary = () => {
-    return (
-        <div>CompanionsLibrary</div>
-    )
-}
-export default CompanionsLibrary
-
+  return <div>CompanionsLibrary</div>;
+};
+export default CompanionsLibrary;
