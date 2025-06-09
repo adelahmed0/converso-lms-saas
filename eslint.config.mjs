@@ -6,6 +6,9 @@ import prettier from 'eslint-plugin-prettier';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
+  {
+    ignores: ['README.md'], // 👈 استبعاد README.md هنا
+  },
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   {
@@ -27,7 +30,7 @@ export default [
     rules: {
       ...eslintConfigPrettier.rules,
       'prettier/prettier': 'error',
-      'react/react-in-jsx-scope': 'off', // For Next.js, React import isn't required
+      'react/react-in-jsx-scope': 'off',
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
     },
