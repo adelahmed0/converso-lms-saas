@@ -1,6 +1,3 @@
-// @ts-ignore
-// @ts-ignore
-
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { subjectsColors, voices } from '@/constants';
